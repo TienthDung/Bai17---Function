@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function tinhTong() {
-            let tong = 0;
-            for (item of arguments) {
-                tong += item;
-            }
-            return tong;
+      function tinhTong() {
+        let tong = 0;
+        for (item of arguments) {
+          tong += item;
         }
+        return tong;
+      }
 
-        let ketQua = tinhTong(1,2,3,4,5);
-        console.log(ketQua);
-        
-        const funcSum = (...d) => {
-            let tong = 0;
-            console.log(d);
-            for (item of d) {
-                tong += item;
-            }
-            return tong;
+      let ketQua = tinhTong(1, 2, 3, 4, 5);
+      console.log(ketQua);
+
+      const funcSum = (...d) => {
+        let tong = 0;
+        console.log(d);
+        for (item of d) {
+          tong += item;
         }
+        return tong;
+      };
 
-        let  result = funcSum(10,20,30,40);
-        console.log(result);
-        
+      let result = funcSum(10, 20, 30, 40);
+      console.log(result);
+
+      let n = prompt("Input the value of n: ");
+      console.log(n);
+      n = parseInt(n);
+
+      const func2 = (n) => {
+        let tong = 0;
+        for (var i = 1; i <= n; i++) {
+          tong += i / n;
+        }
+        return tong;
+      };
+      r = func2(n);
+      console.log("Func2: " + r);
+      
     </script>
-</body>
+  </body>
 </html>
