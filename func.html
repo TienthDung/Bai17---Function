@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhTong() {
+            let tong = 0;
+            for (item of arguments) {
+                tong += item;
+            }
+            return tong;
+        }
+
+        let ketQua = tinhTong(1,2,3,4,5);
+        console.log(ketQua);
+        
+        const funcSum = (...d) => {
+            let tong = 0;
+            console.log(d);
+            for (item of d) {
+                tong += item;
+            }
+            return tong;
+        }
+
+        let  result = funcSum(10,20,30,40);
+        console.log(result);
+        
+    </script>
+</body>
+</html>
